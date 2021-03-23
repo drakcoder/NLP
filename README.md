@@ -47,3 +47,15 @@ Now after training the model we can see the training accuracy to be 85% and the 
 
 LSTM uses a bi-directional wrapper which propagates inputs forward and backward throughout the LSTM layer and then concatenates the outputs, this helps the LSTM learn long term dependencies, unlike regular RNN.
 
+* **Long-term Dependencies**:
+  Long-term Dependencies problems are the problems where the desired outputs depend on the inputs presented at times far in the past.
+  
+  Let us consider a sentence "Fish live in the *water*". 
+  
+  Its pretty easy to predict the answer as sky from the previous words. 
+  
+  But when we consider a sentence like "I grew up in France, I speak fluent *French*".
+  
+  Here it may recognize that the word in italics should be a language but the model may find it hard to bridge the gap between the first sentence and the last word to actually predict the word French and not just any language.
+  
+In theory, regular RNN's are supposed to be capable of handling such issues, but in practice they perform poorly when there are long-term dependency problems.
