@@ -15,11 +15,11 @@ After importing and studying the dataset, we can notice that the positive and ne
 
 * **Pre-processing:**
 
-In the data given consists of HTML tags, we need to remove them using re library from python. After this we replace the values of 'Positive' with 1 and 'Negative' with 0.
+The data given consists of HTML tags, we need to remove them using re library from python. After this we replace the values of 'Positive' with 1 and 'Negative' with 0.
 
 * **Tokenization:**
 
-Tokenization is essentially splitting a phrase,sentence,paragraph,or an entire text document into smaller units, such as induvidual words or terms, Each of these smaller units are called Tokens
+Tokenization is essentially splitting a phrase,sentence,paragraph,or an entire text document into smaller units, such as induvidual words or terms, each of these smaller units are called Tokens
 
 * **Embedder:**
 Here we will be using a pre-trained embedder called GloVe developed by Stanford University.
