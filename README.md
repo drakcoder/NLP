@@ -45,5 +45,5 @@ Now after training the model we can see the training accuracy to be 85% and the 
 
 ## Why does LSTM work better in this case?
 
-LSTM uses a bi-directional wrapper which propagates inputs forward and backward throughout the LSTM layer and then concatenates the outputs, this helps the LSTM learn long term dependencies.
+LSTM uses a bi-directional wrapper which propagates inputs forward and backward throughout the LSTM layer and then concatenates the outputs, this helps the LSTM learn long term dependencies, unlike regular RNN.
 
