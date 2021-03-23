@@ -36,10 +36,14 @@ After the first training we can see the training accuracy to be 81% and the vali
 This generally refers that the model is over-fitting the training set.
 
 * **LSTM**
-Long Short Term Memory networks, LSTM for short, are a special kind of RNN, capable of learning long term dependencies.
 
 Now we will be adding an LSTM layer to our previous model.
 
 ![image](https://user-images.githubusercontent.com/67307833/112137114-de6f0c00-8bf5-11eb-8dbe-80add7092030.png)
 
 Now after training the model we can see the training accuracy to be 85% and the validation accuracy to 83% which is a difference of 2%. This means that the model is still slightly overfitting the training dataset.
+
+## Why does LSTM work better in this case?
+
+LSTM uses a bi-derectional wrapper which propagates inputs forward and backward throughout the LSTM layer and then concatenates the outputs, this helps the LSTM learn long term dependencies.
+
